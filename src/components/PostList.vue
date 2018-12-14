@@ -31,9 +31,14 @@
           {'topiclist_tab': (postItem.good != true && postItem.top != true)}]">{{postItem | tabFormatter}}
             </span>
           </span>
-          </span>
           <span class="title">
-            <a href="#">{{postItem.title}}</a>
+            <router-link :to="{
+              name: 'post_content',
+              params: {
+                id: postItem.id
+              }}">
+              {{postItem.title}}
+            </router-link>
           </span>
           <span class="reply_at">
             {{postItem.last_reply_at | formatDate}}
@@ -45,7 +50,7 @@
       <ul class="author">
         <li class><span class="me">作者</span></li>
         <li class="qrcode">
-          <img src="../assets/my_qrcode.png" alt="qrcode">
+          <img src="https://i.loli.net/2018/12/14/5c13a6800b1ca.png" alt="qrcode">
         </li>
         <li><a href="http://isaacgao.cn/">Blog</a></li>
         <li><a href="https://github.com/Cobatkao">Github</a></li>
@@ -53,7 +58,7 @@
         <li><a href="http://weibo.com/isaacgaohang">Weibo</a></li>
       </ul>
     </div>
-\  </div>
+  </div>
 </template>
 
 <script>
@@ -143,6 +148,10 @@
   }
   .replyNum {
     grid-area: replyNum;
+    display: grid;
+    grid-template-columns: auto 5px auto;
+    justify-content: center;
+    align-items: center;
   }
   .replyNum > .replyCount {
     color: #9e78c0;
@@ -240,7 +249,8 @@
     color: #333;
     border-top: 1px solid #f0f0f0;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 75% 2fr;
+    grid-template-columns: 1fr 1.7fr 1fr 75% 2fr;
+    grid-column-gap: 10px;
     grid-template-areas: "avatar replyNum tab title reply_at";
   }
   .posts li:not(:first-child):hover {

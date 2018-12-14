@@ -71,7 +71,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: utils.assetsPath('img/[name].[hash:7].[ext]'
+              name: utils.assetsPath('img/[name].[hash:7].[ext]')
             }
           }
         ]
