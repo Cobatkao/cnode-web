@@ -149,13 +149,14 @@
   .replyNum {
     grid-area: replyNum;
     display: grid;
-    grid-template-columns: auto 5px auto;
+    grid-template-columns: 24px 5px 24px;
     justify-content: center;
     align-items: center;
   }
   .replyNum > .replyCount {
     color: #9e78c0;
     font-size: 14px;
+    justify-self: flex-end;
   }
   .replyNum > .visitCount {
     font-size: 10px;
@@ -249,7 +250,7 @@
     color: #333;
     border-top: 1px solid #f0f0f0;
     display: grid;
-    grid-template-columns: 1fr 1.7fr 1fr 75% 2fr;
+    grid-template-columns: 30px 1fr 32px 70% 50px;
     grid-column-gap: 10px;
     grid-template-areas: "avatar replyNum tab title reply_at";
   }
