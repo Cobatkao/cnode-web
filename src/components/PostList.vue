@@ -250,7 +250,7 @@
     color: #333;
     border-top: 1px solid #f0f0f0;
     display: grid;
-    grid-template-columns: 30px 1fr 32px 70% 50px;
+    grid-template-columns: 30px 70px 32px 70% 50px;
     grid-column-gap: 10px;
     grid-template-areas: "avatar replyNum tab title reply_at";
   }

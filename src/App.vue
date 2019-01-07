@@ -10,11 +10,13 @@
 <script>
   import Header from './components/Header'
   import PostList from './components/PostList'
+  import userInfo from './components/userInfo'
   export default {
     name: 'App',
     components: {
       Header,
       PostList,
+      userInfo
     }
   }
 </script>
