@@ -6,7 +6,7 @@
     </div>
     <div class="panel">
       <div class="header">
-        <ul class="header_content">
+        <ul class="top_content">
           <li>
             <span><a href="/">主页</a></span>
             <span class="seperator">/</span>
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="replies">
-        <p class="header_content">最近参与的话题</p>
+        <div class="top_content">最近参与的话题</div>
         <ul class="recent-r">
           <li v-for="item in userinfo.recent_replies">
             <router-link :to="{
@@ -51,7 +51,7 @@
         </ul>
       </div>
       <div class="topics">
-        <p class="header_content">最近创建的话题</p>
+        <div class="top_content">最近创建的话题</div>
         <ul class="recent-c">
           <li v-for="item in userinfo.recent_topics">
             <router-link :to="{
@@ -143,7 +143,7 @@
   .userDetail, .recent-r, .recent-c {
     background: #fff;
   }
-  .header_content {
+  .top_content {
     background: #f6f6f6;
     border-radius: 3px 3px 0 0;
     padding: 10px;
@@ -192,6 +192,9 @@
   .user_profile, .login_name {
     color: #778087;
     font-size: 14px;
+  }
+  .login_name {
+    padding-left: 45px;
   }
   .score {
     color: #000;

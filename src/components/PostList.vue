@@ -35,7 +35,8 @@
             <router-link :to="{
               name: 'post_content',
               params: {
-                id: postItem.id
+                id: postItem.id,
+                name: postItem.author.loginname
               }}">
               {{postItem.title}}
             </router-link>

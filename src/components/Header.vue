@@ -1,6 +1,8 @@
 <template>
   <div id="header">
-    <img id="navLogo" src="../assets/header_logo.svg" alt="header_logo">
+    <router-link to="/" id="navLogo">
+      <img src="../assets/header_logo.svg" alt="header_logo">
+    </router-link>
     <ul id="navList">
       <li><a href="#">首页</a></li>
       <li><a href="#">新手入门</a></li>

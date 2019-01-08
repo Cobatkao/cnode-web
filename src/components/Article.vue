@@ -1,5 +1,6 @@
 <template>
     <div class="article">
+      <slideBar></slideBar>
       <div id="loadingGif" v-if="isLoading">
         <img src="../assets/loading.gif" alt="loading_gif">
       </div>
@@ -53,7 +54,11 @@
 </template>
 
 <script>
+    import slideBar from '../components/slideBar'
     export default {
+      components: {
+        slideBar
+      },
       name: "Article",
       data() {
         return {
@@ -78,6 +83,11 @@
       beforeMount() {
         this.isLoading = true
         this.getArticleData()
+      },
+      watch: {
+        '$route'(to, from) {
+          this.getArticleData()
+        }
       }
     }
 </script>
@@ -100,15 +110,16 @@
   .main_article {
     grid-area: main;
     background: #fff;
-    padding: 10px;
-    border-radius: 0 0 3px 3px;
+    padding: 10px 0 10px 10px;
+    border-radius: 3px;
+    margin-right: 15px;
   }
   .article {
     display: grid;
-    grid-template-columns: 13% auto 13%;
+    grid-template-columns: 13% auto auto 13%;
     grid-template-areas:
-          ". main ."
-          ". pannel .";
+          ". main slideBar ."
+          ". pannel . .";
     margin-top: 15px;
   }
   .topic_header {
@@ -138,11 +149,13 @@
   .pannel {
     grid-area: pannel;
     margin-top: 13px;
+    border-radius: 3px;
     background: #fff;
+    margin-right: 15px;
   }
   .topBar {
     background: #f6f6f6;
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px;
     padding: 10px;
   }
   .replyUp img {
