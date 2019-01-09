@@ -34,3 +34,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   ```
 
 2. **路由工作逻辑**：点击头像，通过对router-link内部的参数设置。来找到对应的组件，传递对应的name参数，以此请求正确的页面。
+
+# 问题收集
+
+1. 打包路径出错
+
