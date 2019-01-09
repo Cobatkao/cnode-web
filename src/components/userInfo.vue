@@ -25,7 +25,9 @@
                 <p class="score">{{userinfo.score}} 积分</p>
               </li>
               <li>
-                <i class="fa fa-github-alt fa-lg"></i>
+                <!--<i class="fa fa-github-alt fa-lg"></i>-->
+                <!--<font-awesome-icon :icon="github"/>-->
+                <icon-svg icon-class="githubalt" />
                 <span>{{userinfo.githubUsername}}</span>
               </li>
               <li>

@@ -14,7 +14,7 @@
             <li>∙ {{post.visit_count}}次浏览</li>
             <li>∙ 来自 {{post.tab | tabFormatter}}</li>
           </ul>
-        </div>
+        </div>`
         <!--正文部分-->
         <div v-html="post.content" class="topic_content"></div>
       </div>
@@ -41,7 +41,10 @@
               <span class="date">{{reply.create_at | formatDate}}</span>
               <div class="thumb_up">
                 <span v-if="reply.ups.length > 0">
-                <i class="fa fa-thumbs-o-up fa-lg"></i> {{reply.ups.length}}
+                <!--<i class="fa fa-thumbs-up fa-lg"></i> -->
+                  <!--<font-awesome-icon :icon="thumbs-o-up"/>-->
+                  <icon-svg icon-class="thumbs" />
+                  {{reply.ups.length}}
               </span>
                 <span v-else></span>
               </div>

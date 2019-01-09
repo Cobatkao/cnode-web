@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1547035454334'); /* IE9 */
+  src: url('iconfont.eot?t=1547035454334#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQkAAsAAAAACFAAAAPXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqENINtATYCJAMMCwgABCAFhG0HPBs5B1GUDUqP7EdibKtgL0NZNGGKAUNZn8+Xdjwevvb7nbu73wxrkEQj3aeTGJJKKiQoidDxUglNS3hDOte1+AWXYJZCeFFENXapeHrvphMiNix0++kj+Y97p83zD9Z6luUyx9aoy9I4oIDGmD6mBlQgaSDcMHZBS9xMoG1GEtlOfmktcFSYvQJxp1aywDGjUhqQ0JTWKyYW8chOM92nXsBD8Pn4R4cjSS0zB+5e5Akg89v9JzjvrnZr9VDY0xnAppGxCijEQaVpn00UWmWjrYpsm5PripCm8lYVAUuT1Df6x0tEnSnqQvyiMF0U26ES/AQzodj1T6OONt4BPxA/8Yui3ustC4y1dbf1Cffmd1//fvTnzT23fh37cYNNFdbtGYdHa98fXeEvMwp2j/WNjRHEsYmJgYmG3bXPR00EHh2PH6bGZXsabjr5acfGyiaIY3UD7vA3YHfwWIucsJHB+9/95Vd+DHrGryCbqz8boQ3BXwy6di/w4lVfeH208rw3lLu0wIcNT1fAa7cCb/71vRgDzz8GF0Yr4VF6lGiXR9+CWm6ZbIhjfiMTYcSFKz5XbvtffkIQjWc6/RZiUmIWKK9C75sZ2OybV9aR69dAHOQO1hP+uaRhHh1ZvLUmoMRBwShcesjfmr7RroubwvNaSjNqIgxetbbLk4ps2p3K/coiPkdH5G06VNpspbO701uTFmq8WuuKPX+2Ja3vzqaXql4HHOpl0pnCdK8XN7swrpvD0sM2uzIum0MfpjPp4y43NnMeeQZbjydW0sLDy4M5zNmCjrfu/5Oa3PfTqzyE9rwX7u2LuW4RQR0Dy3sdtnj2dEdjQQcTY2ZyXC8/0UJV4glr8OhxTlaJ51u4HWAAVHk2WQHyc5r9399xEQmuHW7r/jkSBXy12qYHrqqA7pLm2zAHf5fdsaRoXFOdi8JyWIY7O/EHgwltTaeCtjHzwyWTnTMJTZMJJA3TkDXNogt+FWo61qCuaR3aVhRM7xgnsRGlhWUHAIShV5D0fUI21Icu+DmombIEdcOwgba98FqwYz7UMEdCLEYCyW0h1bzRINpaDMPsaqTcoGOlNDcg1CPJovaSqVRKPlqADEiaYohlo5LGWCRFyagn88F2SKczkibJqEE8plQYm9YoFGLVkSjeqAfQNgnCwhABibMFSY1nZCB61TFYeH81RGkDHZbUUFSlrYdILNT1k1JRUjqgC0SGTkW30txiIyUahom4m0hipEfKhwZEZ4WMSKbqdhoID6OoBgRM1lCgcmJXEbW8RP9+a6DNXCZHihxF61KNVRs4Voftg6CeswAAAA==') format('woff2'),
+  url('iconfont.woff?t=1547035454334') format('woff'),
+  url('iconfont.ttf?t=1547035454334') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1547035454334#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-githubalt:before {
+  content: "\e710";
+}
+
+.icon-thumbs:before {
+  content: "\e81c";
+}
+

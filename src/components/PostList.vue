@@ -45,6 +45,9 @@
             {{postItem.last_reply_at | formatDate}}
           </span>
         </li>
+        <div>
+          <Pagination @refreshList="justRefreshIt"></Pagination>
+        </div>
       </ul>
     </div>
     <div class="bio">
@@ -63,19 +66,26 @@
 </template>
 
 <script>
+  import Pagination from './Pagination'
   export default {
     name: "PostList",
     data() {
       return {
         isLoading: false,
-        postLists: []
+        postLists: [],
+        postpage: 1
       }
+    },
+    components: {
+      Pagination
     },
     methods:{
       getListData() {
         this.$http.get('https://cnodejs.org/api/v1/topics', {
-          page: 1,
-          limit: 20
+          params: {
+            page: this.postpage,
+            limit: 20
+          }
         })
           .then(res => {
             // 加载成功后去除动画
@@ -85,13 +95,17 @@
           .catch(err => {
             console.info(err)
           })
+      },
+      justRefreshIt(data) {
+        this.postpage = data
+        this.getListData()
       }
     },
     // 页面挂载之前执行
     beforeMount() {
       // 加载成功前先显示动画
-      this.isLoading = true
-      this.getListData()
+      this.isLoading = true //加载成功之前显示加载动画
+      this.getListData() //在页面加载之前获取数据
     }
   }
 </script>
