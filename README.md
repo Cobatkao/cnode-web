@@ -22,6 +22,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 # 项目笔记
 
+## 预览地址：http://cobatkao.github.io/cnode-web/dist/index.html
+
 1. **命名视图的作用**：路由配置文件里面给每个路由组件都取了一个名字——main的理由是：**命名视图**，对应的组件最后都会映射到name为main的路由出口（router-view）上。
   ```
   {
