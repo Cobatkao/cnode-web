@@ -40,4 +40,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 1. 打包路径出错
 
 尝试修复
- - 修改index.js里面的`assetsPublicPath: '../../',`，打包了一份JS文件，一份map
+
